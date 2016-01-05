@@ -36,18 +36,16 @@ plugins=(git github sublime)
 
 source $ZSH/oh-my-zsh.sh
 
-export GOPATH=$HOME/Development/go
-export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:$GOPATH/bin
 export DOCKER_HOST=tcp://127.0.0.1:4244
 export EDITOR=/usr/local/bin/vim
 
 if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
-  source $HOME/dotfiles/chgo/share/chgo/chgo.sh
-  source $CHGO_ROOT/share/chgo/auto.sh
-  export NVM_DIR=~/.nvm
-  source $(brew --prefix nvm)/nvm.sh
-  if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
+#  source /usr/local/opt/chruby/share/chruby/chruby.sh
+#  source $HOME/dotfiles/chgo/share/chgo/chgo.sh
+#  source $CHGO_ROOT/share/chgo/auto.sh
+#  export NVM_DIR=~/.nvm
+#  source $(brew --prefix nvm)/nvm.sh
+#  if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 fi
 
 w() {
@@ -85,5 +83,3 @@ test -e ${HOME}/.keys && source ${HOME}/.keys
 
 # added by travis gem
 [ -f /Users/martingondermann/.travis/travis.sh ] && source /Users/martingondermann/.travis/travis.sh
-export PATH="/usr/local/sbin:$PATH:/usr/local/texlive/2015/bin/x86_64-darwin"
-export DYLD_LIBRARY_PATH="/usr/local/Cellar/mono/4.2.1.102_1/lib"
