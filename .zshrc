@@ -32,7 +32,7 @@ ZSH_THEME="monty"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github sublime)
+plugins=(git github sublime tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,4 +82,4 @@ test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_in
 test -e ${HOME}/.keys && source ${HOME}/.keys
 
 # added by travis gem
-[ -f /Users/martingondermann/.travis/travis.sh ] && source /Users/martingondermann/.travis/travis.sh
+[ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
