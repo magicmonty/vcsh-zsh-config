@@ -83,3 +83,5 @@ test -e ${HOME}/.keys && source ${HOME}/.keys
 
 # added by travis gem
 [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
+[ -f ${HOME}/.git-semantic-commits/git-chore ] && export PATH=$PATH:$HOME/.git-semantic-commits:$PATH
+
