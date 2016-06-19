@@ -77,6 +77,10 @@ alias gk='gitk --all&'
 alias got='git '
 alias get='git checkout'
 alias code='open "/Applications/Visual Studio Code.app" --args "$PWD"'
+alias c.='open "/Applications/Visual Studio Code.app" --args "$PWD"'
+alias ta='tmux attach'
+
+alias cpmc='sudo cpmediacenter'
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 test -e ${HOME}/.keys && source ${HOME}/.keys
@@ -85,3 +89,5 @@ test -e ${HOME}/.keys && source ${HOME}/.keys
 [ -f ${HOME}/.travis/travis.sh ] && source ${HOME}/.travis/travis.sh
 [ -f ${HOME}/.git-semantic-commits/git-chore ] && export PATH=$PATH:$HOME/.git-semantic-commits:$PATH
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
